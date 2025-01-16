@@ -42,21 +42,9 @@ A distributed messaging system implementing a simple **request-reply protocol**.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/messaging-app.git
-   cd messaging-app
+   git clone https://github.com/mpamposd/Server-Client.git
+   cd Server-Client
    ```
-
-2. Compile the code:
-   ```bash
-   javac -d out src/*.java
-   ```
-
-3. Package into JAR files:
-   ```bash
-   jar -cf jars/Server.jar -C out server/
-   jar -cf jars/Client.jar -C out client/
-   ```
-
 ---
 
 ## Usage
@@ -74,7 +62,7 @@ java -jar jars/Server.jar 5000
 ### Run the Client
 Use the client to interact with the server:
 ```bash
-java -jar jars/client.jar <server_ip> <port_number> <function_id> <arguments>
+java -jar jars/client.jar <server_ip> <port> <function_id> <arguments>
 ```
 Example for creating a new account:
 ```bash
@@ -103,7 +91,7 @@ messaging-app/
 │
 ├── src/                # Source code
 │   ├── Server.java
-│   ├── Client.java
+│   ├── client.java
 │
 ├── jars/               # Compiled JAR files
 │   ├── Server.jar
